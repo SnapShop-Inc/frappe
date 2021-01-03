@@ -10,6 +10,7 @@
   "sb0_5",
   "enabled",
   "section_break_3",
+  "company",
   "email",
   "first_name",
   "middle_name",
@@ -51,7 +52,6 @@
   "send_me_a_copy",
   "allowed_in_mentions",
   "email_signature",
-  "email_inbox",
   "user_emails",
   "sb_allow_modules",
   "modules_html",
@@ -577,6 +577,15 @@
    "fieldtype": "Password",
    "label": "API Secret",
    "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "permlevel": 2
   }
  ],
  "icon": "fa fa-user",
@@ -626,7 +635,7 @@
   {
    "group": "Settings",
    "link_doctype": "Assignment Rule",
-   "link_fieldname": "user"
+   "link_fieldname": "last_user"
   },
   {
    "group": "Settings",
@@ -645,7 +654,7 @@
   }
  ],
  "max_attachments": 5,
- "modified": "2020-08-26 19:48:49.677800",
+ "modified": "2020-12-29 13:58:23.839405",
  "modified_by": "Administrator",
  "module": "Core",
  "name": "User",
@@ -666,9 +675,38 @@
    "write": 1
   },
   {
+   "delete": 1,
    "permlevel": 1,
    "read": 1,
    "role": "System Manager",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Organization Administrator",
+   "set_user_permissions": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "delete": 1,
+   "permlevel": 1,
+   "read": 1,
+   "role": "Organization Administrator",
+   "write": 1
+  },
+  {
+   "delete": 1,
+   "permlevel": 2,
+   "read": 1,
+   "role": "Organization Administrator",
    "write": 1
   }
  ],
