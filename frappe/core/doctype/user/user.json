@@ -10,6 +10,7 @@
   "sb0_5",
   "enabled",
   "section_break_3",
+  "company",
   "email",
   "first_name",
   "middle_name",
@@ -97,6 +98,15 @@
    "depends_on": "enabled",
    "fieldname": "section_break_3",
    "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Active Organization",
+   "options": "Company",
+   "permlevel": 2
   },
   {
    "fieldname": "email",
@@ -645,7 +655,7 @@
   }
  ],
  "max_attachments": 5,
- "modified": "2020-08-26 19:48:49.677800",
+ "modified": "2020-12-27 19:48:49.677800",
  "modified_by": "Administrator",
  "module": "Core",
  "name": "User",
@@ -672,7 +682,7 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
+ "quick_entry": 0,
  "search_fields": "full_name",
  "show_name_in_global_search": 1,
  "sort_field": "modified",
